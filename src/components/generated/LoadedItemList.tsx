@@ -885,13 +885,13 @@ export const LoadedItemList = (props: LoadedItemListProps) => {
             }}>Excluir base cadastral atual?</h2>
                 <p style={{
               fontSize: '16px',
-              fontWeight: 600,
+              fontWeight: 400,
               lineHeight: '24px',
               color: 'rgba(77, 80, 86, 1)',
               margin: 0,
               fontFamily: '"Inter", sans-serif'
             }}>
-                  Você está prestes a excluir permanentemente todos os imóveis importados da base atual. As configurações gerais e os parâmetros de cálculo não serão afetados.
+                  Você está prestes a excluir permanentemente todos os imóveis importados da base atual. <span style={{ fontWeight: 600 }}>As configurações gerais e os parâmetros de cálculo não serão afetados.</span>
                 </p>
               </div>
 
@@ -911,12 +911,12 @@ export const LoadedItemList = (props: LoadedItemListProps) => {
             }} />
                 <span style={{
               fontSize: '14px',
-              fontWeight: 500,
+              fontWeight: 400,
               color: 'rgba(145, 89, 48, 1)',
               lineHeight: '20px',
               fontFamily: '"Inter", sans-serif'
             }}>
-                  Atenção: Caso exista uma simulação vigente utilizando esta base, ela retornará ao status de “não aplicada”.
+                  <span style={{ fontWeight: 600 }}>Atenção:</span> Caso exista uma simulação vigente utilizando esta base, ela retornará ao status de “não aplicada”.
                 </span>
               </div>
 
@@ -929,11 +929,11 @@ export const LoadedItemList = (props: LoadedItemListProps) => {
           }}>
                 <label style={{
               fontSize: '14px',
-              fontWeight: 500,
+              fontWeight: 400,
               color: 'rgba(22, 26, 29, 1)',
               fontFamily: '"Inter", sans-serif'
             }}>
-                  Para confirmar a exclusão, digite a palavra EXCLUIR abaixo:
+                  Para confirmar a exclusão, digite a palavra <span style={{ fontWeight: 600 }}>EXCLUIR</span> abaixo:
                 </label>
                 <input type="text" value={confirmationText} onChange={e => setConfirmationText(e.target.value)} onFocus={() => setIsInputFocused(true)} onBlur={() => setIsInputFocused(false)} style={{
               height: '32px',
