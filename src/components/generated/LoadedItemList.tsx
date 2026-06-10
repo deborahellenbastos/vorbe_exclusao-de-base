@@ -911,12 +911,12 @@ export const LoadedItemList = (props: LoadedItemListProps) => {
             }} />
                 <span style={{
               fontSize: '14px',
-              fontWeight: 400,
+              fontWeight: 500,
               color: 'rgba(145, 89, 48, 1)',
               lineHeight: '20px',
               fontFamily: '"Inter", sans-serif'
             }}>
-                  <span style={{ fontWeight: 600 }}>Atenção:</span> Caso exista uma simulação vigente utilizando esta base, ela retornará ao status de “não aplicada”.
+                  <span style={{ fontWeight: 700 }}>Atenção:</span> Caso exista uma simulação vigente utilizando esta base, ela retornará ao status de “não aplicada”.
                 </span>
               </div>
 
