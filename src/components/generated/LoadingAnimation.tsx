@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Lottie from 'lottie-react';
+import loadingAnimationData from '../../assets/loading-animation.json';
 interface BaseComponentProps {
   className?: string;
   style?: React.CSSProperties;
@@ -375,13 +377,19 @@ export const LoadingAnimation = (props: LoadingAnimationProps) => {
             alignItems: 'center',
             justifyContent: 'center',
             width: '100%',
-            maxWidth: '400px'
+            maxWidth: '400px',
+            marginTop: '-40px'
           }}>
-              <img src="https://storage.googleapis.com/storage.magicpath.ai/user/396087310556483584/figma-assets/79911351-185b-4dba-b0e9-f756ad4d77b9.svg" alt="Loading Illustration" style={{
-              width: '100%',
-              height: 'auto',
-              maxHeight: '326px'
-            }} />
+              <Lottie
+                animationData={loadingAnimationData}
+                loop={true}
+                autoplay={true}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  maxHeight: '326px'
+                }}
+              />
             </div>
           </section>
         </div>

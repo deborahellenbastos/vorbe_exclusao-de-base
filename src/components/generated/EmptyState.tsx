@@ -45,7 +45,7 @@ export const EmptyState = (props: EmptyStateProps) => {
         } else {
           setIsLoading(false);
         }
-      }, 3000);
+      }, 5000);
     }
     return () => clearTimeout(timer);
   }, [isLoading, props.onUploadComplete]);
